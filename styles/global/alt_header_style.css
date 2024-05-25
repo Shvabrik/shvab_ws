@@ -8,12 +8,11 @@ main .alt_header {
 
 main .alt_header p {
     user-select: none;
-    min-width: 270px;
     font-size: 32px;
 }
 
 main .alt_header nav {
-    margin: 10px;
+    margin: 10px 0px;
 }
 
 main .alt_header nav ul {

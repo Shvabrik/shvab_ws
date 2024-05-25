@@ -3,12 +3,12 @@
 
 html {
     scroll-behavior: smooth;
-    font-family: "Share Tech Mono", monospace;
-    font-weight: bold;
-    font-style: normal;
 }
 
 body {
+    font-family: "Share Tech Mono", monospace;
+    font-weight: bold;
+    font-style: normal;
     background-color: black;
     margin: 0;
 }
