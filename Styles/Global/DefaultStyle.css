@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+
+@font-face {
+    font-family: IbmVga8x16;
+    font-style: normal;
+    font-weight: 400;
+    src: url(../../fonds/Web437_IBM_VGA_8x16.woff) format('woff');
+}
+
+@font-face {
+    font-family: IbmVga8x16-2x;
+    font-style: normal;
+    font-weight: 400;
+    src: url(../../fonds/Web437_IBM_VGA_8x16-2x.woff) format('woff');
+}
+
+html {
+    scroll-behavior: smooth;
+    scrollbar-color: white transparent;
+    scrollbar-width: thin;
+}
+
+body {
+    cursor: url(../../Images/Cursor.png), auto;
+    font-family: IbmVga8x16;
+    background-color: black;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+ul {
+    padding-inline-start: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    user-select: none;
+}
+
+img.small {
+    width: 30px;
+    height: 30px;
+}
+
+:hover {
+    cursor: url(../../Images/Cursor.png), pointer;
+}
+
+:active {
+    cursor: url(../../Images/CursorClick.png), auto;
+}
+
+::selection {
+    background-color: #E0E0E0;
+    color: #000000;
+}

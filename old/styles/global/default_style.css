@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Share Tech Mono", monospace;
+    font-weight: bold;
+    font-style: normal;
+    background-color: black;
+    margin: 0;
+}
+h1, h2, h3, h4, h5, p {
+    margin: 0;
+}
+
+ul {
+    padding-inline-start: 0;
+}
+
+ul li.invisible {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    user-select: none;
+}
+
+img.small {
+    width: 30px;
+    height: 30px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    position: absolute;
+}
+
+::-webkit-scrollbar-track {
+    display: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: white; 
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: rgb(155, 155, 155);
+}

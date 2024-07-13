@@ -1,0 +1,128 @@
+header div.name {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+header div.name img {
+    height: 76px;
+    margin: 10px;
+}
+
+header div.name h1 {
+    font-size: 64px;
+    text-shadow: -1px 2px #FF00FF;
+
+}
+
+header nav {
+    border: solid #FFFFFF;
+    border-width: 1px 0px;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    height: 100%;
+}
+
+header nav ul li {
+    list-style-type: none;
+    margin: 10px;
+    transition: 0.1s;
+}
+
+header nav ul li:active {
+    text-shadow: -1px 2px #FF00FF;
+    transform: skew(5deg) scale(1.1);
+}
+
+header a {
+    color: rgb(255, 255, 255);
+    font-size: 43px;
+    text-decoration: none;
+    user-select: none;
+}
+
+header div.name img:hover {
+    animation: jump 0.3s infinite;
+}
+
+@keyframes jump {
+    30% {
+        transform: scale(0.7, 1) translateY(-7px);
+    }
+    70% {
+        transform: scale(1) translateY(5px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+    
+}
+
+@media screen and (min-width: 353px) {
+    header nav {
+        height: 86px;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    header div.name img {
+        height: 50px;
+    }
+    header div.name h1 {
+        font-size: 9vw;
+    }
+    header nav ul li a {
+        font-size: 6vw;
+    }
+}
+
+@media screen and (max-width: 401px) {
+    header div.name h1 {
+        font-size: 32px;
+        width: 176px;
+    }
+    header nav ul li a {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 260px) {
+    header div.name img {
+        display: none;
+    }
+    header div.name h1 {
+        text-align: center;
+        width: 80vw;
+        font-size: 14vw;
+    }
+}
+
+@media screen and (max-width: 115px) {
+    header div.name img {
+        display: flex;
+    }
+    header div.name h1 {
+        display: none;
+    }
+}
+
+@media (hover: hover) { 
+    header nav ul li:hover {
+        transform: skew(5deg) scale(1.1) translate(-1px, 2px);
+        text-shadow: -1px 2px #FF00FF;
+    }
+    header nav ul li:active {
+        transform: none;
+        text-shadow: none;
+    }
+}
