@@ -19,6 +19,7 @@ html {
 }
 
 body {
+    cursor: url(../../Images/CursorClick.png), auto;
     cursor: url(../../Images/Cursor.png), auto;
     font-family: IbmVga8x16;
     background-color: black;
