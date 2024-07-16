@@ -1,17 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
-
 @font-face {
     font-family: IbmVga8x16;
     font-style: normal;
     font-weight: 400;
-    src: url(../../fonds/Web437_IBM_VGA_8x16.woff) format('woff');
+    src: url(../../Fonds/Web437_IBM_VGA_8x16.woff) format('woff');
 }
 
 @font-face {
     font-family: IbmVga8x16-2x;
     font-style: normal;
     font-weight: 400;
-    src: url(../../fonds/Web437_IBM_VGA_8x16-2x.woff) format('woff');
+    src: url(../../Fonds/Web437_IBM_VGA_8x16-2x.woff) format('woff');
 }
 
 html {
@@ -61,3 +59,17 @@ img.small {
     background-color: #E0E0E0;
     color: #000000;
 }
+
+/* 
+    shvabrik is mop,
+    its lie,
+    I know what u want to say
+            -"but why"
+    u have no идей
+
+    швабрик is швабра
+    becose shvabrik is mop
+    я хз это пиздец
+    я еблан бебебе
+
+*/
