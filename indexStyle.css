@@ -175,9 +175,13 @@ main div.Contaner2 div.Left div.ShvabClicker img:active {
     main div.Contaner1, main div.Contaner2 {
         flex-direction: column;
     }
-    main div.Contaner1 div.Left div.AboutSite, main div.Contaner1 div.Right div.AboutShvab, main div.Contaner1 div.Right div.DiscordServ, main div.Contaner2 div.Left div.RandomImg {
+    main div.Contaner1 div.Left div.AboutSite, main div.Contaner1 div.Right div.AboutShvab, main div.Contaner1 div.Right div.DiscordServ, main div.Contaner2 div.Left div.RandomImg, main div.Contaner2 div.Left div.ShvabClicker {
         width: calc(100% - 42px);
         height: fit-content;
+    }
+    main div.Contaner2 div.Left div.ShvabClicker img {
+        width: calc(80% - 20px);
+        height: auto;
     }
 }
 
