@@ -1,3 +1,5 @@
+$('body *').on('touchstart', function (){});
+
 const chooseANewPicture = () => {
     let randImg = document.getElementById('RandImg');
     console.log(randImg.src = `Assets/Images/RAND_IMG_${Math.floor(Math.random() * 5)}.JPEG`);
