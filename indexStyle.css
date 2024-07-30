@@ -27,10 +27,10 @@ main div.Left, main div.Right {
 }
 
 main div.Contaner1 div.Left, main div.Contaner2 div.Right {
-    width: 100%;
+    width: calc(100% - 316px);
 }
 
-main div.Contaner1 div.Left div.AboutSite, main div.Contaner1 div.Left div.FillBlock {
+main div.Contaner1 div.Left div.AboutSite, main div.Contaner1 div.Left div.FillerBlock, main div.Contaner2 div.Right div.BrainFuck {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -42,6 +42,11 @@ main div.Contaner1 div.Left div.AboutSite, main div.Contaner1 div.Left div.FillB
     padding: 10px;
 }
 
+main div.Contaner1 div.Left div.FillerBlock {
+    justify-content: center;
+    height: calc(100% - 42px);
+}
+
 main div.Contaner1 div.Left div.MissingPerson {
     display: flex;
     align-items: center;
@@ -49,10 +54,6 @@ main div.Contaner1 div.Left div.MissingPerson {
     border: 1px solid #FFFFFF;
     box-shadow: -4px 7px #00FF00;
     margin: 10px;
-}
-
-main div.Contaner1 div.Left div.MissingPerson h2 {
-    margin: 20px;
 }
 
 main div.Contaner1 div.Left div.MissingPerson div.PosterMain {
@@ -117,6 +118,110 @@ main div.Contaner2 div.Left div.RandomImg img {
     padding: 5px;
 }
 
+main div.Contaner2 div.Left div.ShvabClicker img {
+    height: calc(100% - 205px);
+}
+
+main div.Contaner2 div.Left div.ShvabClicker img:active {
+    animation: jump 0.3s;
+}
+
+main div.Contaner2 div.Right div.BrainFuck div.Form {
+    width: 80%;
+    height: 200px;
+}
+
+main div.Contaner2 div.Right div.BrainFuck div.Form textarea.BrainFuckInput {
+    background-color: #000000;
+    border: 2px dashed #FFFFFF;
+    font-family: IbmVga8x16-2x;
+    font-size: 18px;
+    color: #FFFFFF;
+    resize: none;
+    vertical-align: top;
+    width: calc(100% - 8px);
+    height: 142px;
+}
+
+main div.Contaner2 div.Right div.BrainFuck div.Form div.FormBottom button {
+    background-color: #000000;
+    border: 1px solid #FFFFFF;
+    box-shadow: -2px 3px #00FF00;
+    font-family: IbmVga8x16;
+    font-size: 18px;
+    color: #FFFFFF;
+    width: 50px;
+    height: 30px;
+    transition: 0.1s;
+}
+
+main div.Contaner2 div.Right div.BrainFuck div.Form div.FormBottom button:active, main div.Contaner2 div.Right div.BrainFuck div.BrainFuckOutput div.MemoryOutput button:active { 
+    transform: translate(-2px, 3px);
+    box-shadow: none;
+}
+
+main div.Contaner2 div.Right div.BrainFuck div.Form div.FormBottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    margin: 5px;
+    width: calc(100% - 10px);
+    height: 40px;
+}
+
+main div.Contaner2 div.Right div.BrainFuck div.BrainFuckOutput {
+    width: 100%;
+}
+
+main div.Contaner2 div.Right div.BrainFuck div.BrainFuckOutput div.MemoryOutput {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    width: calc(100% - 40px);
+    height: 40px;
+    margin: 0px 20px 10px 20px;
+}
+
+main div.Contaner2 div.Right div.BrainFuck div.BrainFuckOutput div.MemoryOutput div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: repeating-linear-gradient(-60deg, #EF00EF 0, #EF00EF 1px, transparent 1px, transparent 5px);
+    border: 1px solid #FFFFFF;
+    width: 100%;
+    height: calc(100% - 2px);
+    margin: 0px 10px 0px 10px;
+}
+
+main div.Contaner2 div.Right div.BrainFuck div.BrainFuckOutput div.MemoryOutput button {
+    background-color: #000000;
+    border: 1px solid #FFFFFF;
+    box-shadow: -2px 3px #00FF00;
+    font-family: IbmVga8x16;
+    font-size: 18px;
+    color: #FFFFFF;
+    width: 50px;
+    height: 30px;
+    margin: 0px 0px 3px 2px;
+    transition: 0.1s;
+}
+
+main div.Contaner2 div.Right div.BrainFuck div.BrainFuckOutput textarea.TextOutput {
+    background-color: #000000;
+    border: 2px dashed #FFFFFF;
+    font-family: IbmVga8x16;
+    font-size: 18px;
+    color: #FFFFFF;
+    resize: none;
+    vertical-align: top;
+    width: calc(100% - 12px);
+    height: 90px;
+    padding: 4px;
+}
+
 main div.Contaner2 div.Right div.Nothing {
     display: flex;
     align-items: center;
@@ -125,18 +230,9 @@ main div.Contaner2 div.Right div.Nothing {
     border: 1px solid #FFFFFF;
     box-shadow: -4px 7px #00FF00;
     width: calc(100% - 42px);
-    font-size: 100%;
-    height: 407px;
+    height: 107px;
     margin: 10px;
     padding: 10px;
-}
-
-main div.Contaner2 div.Left div.ShvabClicker img {
-    height: calc(100% - 205px);
-    margin: 10px;
-}
-main div.Contaner2 div.Left div.ShvabClicker img:active {
-    animation: jump 0.3s;
 }
 
 
@@ -164,16 +260,15 @@ main div.Contaner2 div.Left div.ShvabClicker img:active {
     }
 }
 */
-
-@media screen and (max-width: 980px) {
-    main div.Contaner1 div.Left div.FillBlock {
+@media screen and (max-width: 855px) {
+    main div.Contaner1 div.Left div.FillerBlock {
         display: none;
     }
-}
-
-@media screen and (max-width: 765px) {
     main div.Contaner1, main div.Contaner2 {
         flex-direction: column;
+    }
+    main div.Contaner1 div.Left, main div.Contaner2 div.Right {
+        width: 100%;
     }
     main div.Contaner1 div.Left div.AboutSite, main div.Contaner1 div.Right div.AboutShvab, main div.Contaner1 div.Right div.DiscordServ, main div.Contaner2 div.Left div.RandomImg, main div.Contaner2 div.Left div.ShvabClicker {
         width: calc(100% - 42px);
@@ -185,7 +280,7 @@ main div.Contaner2 div.Left div.ShvabClicker img:active {
     }
 }
 
-@media screen and (max-width: 471px) {
+@media screen and (max-width: 480px) {
     main div.Contaner1 div.Left div.MissingPerson div.PosterMain h5 {
         display: none;
     }
@@ -193,7 +288,7 @@ main div.Contaner2 div.Left div.ShvabClicker img:active {
         justify-content: center;
     }
     main div.Contaner1 div.Left div.MissingPerson div.PosterMain div.Poster h6 {
-        font-size: 8vw;
+        font-size: 6vw;
     }
 }
 
@@ -227,4 +322,17 @@ main div.Contaner2 div.Left div.ShvabClicker img:active {
     100% {
         transform: scale(1);;
     }
+}
+
+@keyframes jump {
+    30% {
+        transform: scale(0.7, 1) translateY(-7px);
+    }
+    70% {
+        transform: scale(1) translateY(5px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+    
 }

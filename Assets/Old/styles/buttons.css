@@ -1,0 +1,25 @@
+.button1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 70px;
+    background-color: white;
+    box-shadow: -4px 7px rgba(255, 255, 255, 0.5);
+    transition: 0.2s;
+    
+}
+
+@media (hover: hover) { 
+    li.button1:hover {
+        transform: scale(1.1);
+    }
+    li.button1:active {
+        transform: scale(1.1);
+    }
+}
+
+.button:active {
+    transform: translateY(7px) translateX(-4px);
+    box-shadow: none;
+}

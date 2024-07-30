@@ -118,11 +118,11 @@ header div.name img:hover {
 
 @media (hover: hover) { 
     header nav ul li:hover {
-        transform: skew(5deg) scale(1.1) translate(-1px, 2px);
         text-shadow: -1px 2px #FF00FF;
+        transform: skew(5deg) scale(1.1) translate(-1px, 2px);
     }
     header nav ul li:active {
-        transform: none;
         text-shadow: none;
+        transform: none;
     }
 }

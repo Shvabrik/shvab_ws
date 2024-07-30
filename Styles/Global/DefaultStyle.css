@@ -2,14 +2,14 @@
     font-family: IbmVga8x16;
     font-style: normal;
     font-weight: 400;
-    src: url(../../Fonds/Web437_IBM_VGA_8x16.woff) format('woff');
+    src: url(../../Assets/Fonds/Web437_IBM_VGA_8x16.woff) format('woff');
 }
 
 @font-face {
     font-family: IbmVga8x16-2x;
     font-style: normal;
     font-weight: 400;
-    src: url(../../Fonds/Web437_IBM_VGA_8x16-2x.woff) format('woff');
+    src: url(../../Assets/Fonds/Web437_IBM_VGA_8x16-2x.woff) format('woff');
 }
 
 html {
@@ -19,7 +19,7 @@ html {
 }
 
 body {
-    cursor: url(../../Images/Cursor.png), auto;
+    cursor: url(../../Assets/Images/Cursor.png), auto;
     font-family: IbmVga8x16;
     background-color: black;
     color: #FFFFFF;
@@ -47,12 +47,16 @@ img.small {
     height: 30px;
 }
 
+textarea:focus {
+    outline: none;
+}
+
 :hover {
-    cursor: url(../../Images/Cursor.png), pointer;
+    cursor: url(../../Assets/Images/Cursor.png), pointer;
 }
 
 :active {
-    cursor: url(../../Images/CursorClick.png), auto;
+    cursor: url(../../Assets/Images/CursorClick.png), auto;
 }
 
 ::selection {
@@ -60,7 +64,8 @@ img.small {
     color: #000000;
 }
 
-/* 
+/*
+
     shvabrik is mop,
     its lie,
     I know what u want to say

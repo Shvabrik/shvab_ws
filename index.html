@@ -12,7 +12,7 @@
     <body>
         <header>
             <div class="name">
-                <img src="Images/IMG_3665.PNG" alt="where is the photo?">
+                <img src="Assets/Images/IMG_3665.PNG" alt="where is the photo?">
                 <h1>shvabrik's website</h1>
             </div>
             <nav>
@@ -30,22 +30,21 @@
                 <div class="Left">
                     <div class="AboutSite">
                         <h2 style="margin-bottom: 10px;" >About this site</h2>
-                        <h5>This site was inspired by the work of <a style="background-color: #AFAFAF;" href="https://justanoval.com" target="blank">justan oval</a>, and also I did not like my old site and decided to make a new site, originally the replacement site was in a completely different style <a style="background-color: #AFAFAF;" href="old/index.html" target="blank">(link to that site)</a>, then I gave it up for the sake of learning asembler, and 10/7/24 decided to write this site.</h5>
+                        <h5>This site was inspired by the work of <a style="background-color: #AFAFAF;" href="https://justanoval.com" target="blank">justan oval</a>, and also I did not like my old site and decided to make a new site, originally the replacement site was in a completely different style <a style="background-color: #AFAFAF;" href="Assets/Old/index.html" target="blank">(link to that site)</a>, then I gave it up for the sake of learning asembler, and 10/7/24 decided to write this site.</h5>
                     </div>
                     <div class="MissingPerson">
-                        <h2>Missing persone</h2>
+                        <h2 style="margin: 5px;">Missing persone</h2>
                         <div class="PosterMain">
                             <div class="Poster">
-                                <img style="width: calc(100% - 20px); margin: 10px;" src="Images/IMG_3755.PNG" alt="where is the photo?">
+                                <img style="width: calc(100% - 20px); margin: 10px;" src="Assets/Images/IMG_3755.PNG" alt="where is the photo?">
                                 <h3>noires</h3>
-                                <h6><a style="background-color: #AFAFAF;" href="https://www.youtube.com/@nekonoiree" target="blank">find him</a></h6>
+                                <h6><a style="background-color: #AFAFAF;" href="https://www.youtube.com/@nekonoiree" target="blank">(find him)</a></h6>
                             </div>
                             <h5><--- lil edm producer</h5>
                         </div>
                     </div>
-                    <div class="FillBlock">
-                        <h2 style="margin-bottom: 10px;" >FillBlock</h2>
-                        <h5>FillBlock</h5>
+                    <div class="FillerBlock">
+                        <h2>FillerBlock</h2>
                     </div>
                 </div>
                 <div class="Right">
@@ -56,35 +55,56 @@
                     <div style="text-align: center;" class="DiscordServ">
                         <h2 style="margin-bottom: 10px;">Discord</h2>
                         <h5>join my <wbr> discord server,<wbr> click here:</h5>
-                        <a href="https://discord.gg/7426WRwZDf" target="blank"><img src="Images/Discord.PNG" alt="where is the photo?"></a>
+                        <a href="https://discord.gg/7426WRwZDf" target="blank"><img src="Assets/Images/Discord.PNG" alt="where is the photo?"></a>
                     </div>
                 </div>
             </div>
             <div class="Contaner2">
                 <div class="Left">
-                    <div class="RandomImg">
+                    <div style="text-align: center;" class="RandomImg">
                         <h2 style="margin: 20px 0px;" >random img:</h2>
-                        <img src="Images/IMG_3829.JPEG" alt="where is the photo?">
+                        <img id="RandImg" src="" alt="where is the photo?">
                     </div>
                     <div style="text-align: center;" class="ShvabClicker">
-                        <h2 style="margin-bottom: 10px;">Shvab Clicker</h2>
-                        <img src="Images/IMG_3665.PNG" alt="where is the photo?">
-                        <h3>count: 00</h3>
+                        <h2 style="margin-bottom: 20px;">Shvab Clicker</h2>
+                        <img id="ShvabClicker" src="Assets/Images/IMG_3665.PNG" alt="where is the photo?">
+                        <h3 style="margin-top: 10px;" id="Counter">count: 0</h3>
+                        <noscript> <h3>js is disabled</h3> </noscript>
                     </div>
                 </div>
                 <div class="Right">
+                    <div class = "BrainFuck">
+                        <h2 style="margin-bottom: 10px; text-align: center;">BrainFuck intrepreter</h2>
+                        <div class="Form">
+                            <textarea id="BrainFuckInput" class="BrainFuckInput"></textarea>
+                            <div class="FormBottom">
+                                <button id="RunBrainFuck">Run</button>
+                            </div>
+                        </div>
+                        <div class="BrainFuckOutput">
+                            <h3 style="margin-bottom: 5px;">Memory</h3>
+                            <div id="MemoryOutput" class="MemoryOutput">
+                                <button><</button>
+                                <div><h4 style="margin: 3px 0px 0px 1px;">00</h4></div>
+                                <div><h4 style="margin: 3px 0px 0px 1px;">00</h4></div>
+                                <div style="background: repeating-linear-gradient(-60deg, #FF00FF 0, #FF00FF 2px, transparent 1px, transparent 5px);"><h4 style="margin: 3px 0px 0px 1px;">00</h4></div>
+                                <div><h4 style="margin: 3px 0px 0px 1px;">00</h4></div>
+                                <div><h4 style="margin: 3px 0px 0px 1px;">00</h4></div>
+                                <button>></button>
+                            </div>
+                            <hr>
+                            <h3 style="margin-bottom: 5px;">Output</h3>
+                            <textarea style="font-size: 18px;" id="TextOutput" class="TextOutput" readonly>Hi!</textarea>
+                        </div>
+                    </div>
                     <div class="Nothing">
                         <h2>nothing</h2>
                     </div>
                 </div>
             </div>
-            <div class="Contacts">
-                 
-            </div>
-        </main>
         <footer>
 
         </footer>
-        <script src="JavaScripts/IndexJs.js"></script>
+        <script src="JavaScripts/IndexScript.js"></script>
     </body>
 </html>
