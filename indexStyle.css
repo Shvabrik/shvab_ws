@@ -122,7 +122,7 @@ main div.Contaner2 div.Left div.ShvabClicker img {
     height: calc(100% - 205px);
 }
 
-main div.Contaner2 div.Left div.ShvabClicker img:active {
+main div.Contaner2 div.Left div.ShvabClicker img.active {
     animation: jump 0.3s;
 }
 
@@ -155,7 +155,7 @@ main div.Contaner2 div.Right div.BrainFuck div.Form div.FormBottom button {
     transition: 0.1s;
 }
 
-main div.Contaner2 div.Right div.BrainFuck div.Form div.FormBottom button:active, main div.Contaner2 div.Right div.BrainFuck div.BrainFuckOutput div.MemoryOutput button:active { 
+main div.Contaner2 div.Right div.BrainFuck div.Form div.FormBottom button.active, main div.Contaner2 div.Right div.BrainFuck div.BrainFuckOutput div.MemoryOutput button.active { 
     transform: translate(-2px, 3px);
     box-shadow: none;
 }
