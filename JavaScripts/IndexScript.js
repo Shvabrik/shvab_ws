@@ -7,20 +7,15 @@ chooseANewPicture();
 
 const count = () => {
     let text = document.getElementById('Counter');
-    let img = document.getElementById('ShvabClicker')
     let counter = 0;
     return () => {
-        text.innerHTML = `count: ${counter += 1}`;
         let audio = new Audio(`Assets/Sounds/SND_${Math.floor(Math.random() * 13)}.wav`);
         audio.play();
-        document.getElementById('ShvabClicker').classList.add('active')
+        text.innerHTML = `count: ${counter += 1}`;
     } 
 }
 
-document.getElementById('ShvabClicker').addEventListener("click", count());
-
-document.getElementById('ShvabClicker').addEventListener("animationend", () => document.getElementById('ShvabClicker').classList.remove('active'), false);
-
+document.getElementById('ShvabClicker').addEventListener('click', count());
 
 
 
@@ -40,3 +35,6 @@ const BrainFuckInterpreter = () => {
 }
 
 document.getElementById('RunBrainFuck').addEventListener('click', BrainFuckInterpreter);
+
+
+$('body *').on('touchstart', function (){});
