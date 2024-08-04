@@ -290,6 +290,20 @@ main div.Contaner2 div.Right div.Nothing {
     main div.Contaner1 div.Left div.MissingPerson div.PosterMain div.Poster h6 {
         font-size: 6vw;
     }
+    main div.Contaner2 div.Right div.BrainFuck div.BrainFuckOutput div.MemoryOutput div {
+        font-size: 8vw;
+        height: fit-content;
+        margin: 0px;
+    }
+    main div.Contaner2 div.Right div.BrainFuck div.BrainFuckOutput div.MemoryOutput button {
+        box-shadow: none;
+        font-size: 8vw;
+        height: fit-content;
+        margin: 0px;
+    }
+    main div.Contaner2 div.Right div.BrainFuck div.BrainFuckOutput div.MemoryOutput button:active {
+        transform: scale(0.9);
+    }
 }
 
 @media screen and (max-width: 322px) {
@@ -304,9 +318,10 @@ main div.Contaner2 div.Right div.Nothing {
     main div.Contaner1 div.Left div.MissingPerson div.PosterMain div.Poster h3  {
         font-size: 18vw;
     }
-}
-
-@media screen and (max-width: 172px) {
+    main div.Contaner2 div.Right div.BrainFuck div.BrainFuckOutput div.MemoryOutput{
+        margin: 0px 3vw 0px 3vw;
+        width: calc(100% - 6vw);
+    }
     main div.Contaner1, main div.Contaner2 {
         margin: 0px;
         width: 100%;
