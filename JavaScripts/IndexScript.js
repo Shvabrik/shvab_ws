@@ -38,6 +38,31 @@ document.getElementById('RunBrainFuck').addEventListener('click', BrainFuckInter
 
 
 
+const Scroll = () => {
+    let UpIndecator = document.getElementById('UpIndecator');
+    let DownIndecator = document.getElementById('DownIndecator');
+    let PreScrollY;
+    return () => {
+        if(PreScrollY > window.scrollY) {
+            DownIndecator.classList.add("hide");
+            UpIndecator.classList.remove("hide");
+        }
+
+        if(PreScrollY < window.scrollY) {
+            UpIndecator.classList.add("hide");
+            DownIndecator.classList.remove("hide");
+        }
+        console.log("u" + UpIndecator.classList)
+        console.log("d" + DownIndecator.classList)
+        PreScrollY = window.scrollY;
+    }
+}
+
+
+addEventListener("scroll", Scroll());
+
+
+
 
 
 $('body *').on('touchstart', function (){});

@@ -4,6 +4,14 @@ main {
     flex-direction: column;
 }
 
+main div.ScrollIndecator {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 40px; 
+    left: 40px;
+}
+
 main div.Contaner1, main div.Contaner2 {
     display: flex;
     flex-direction: row;
@@ -325,4 +333,10 @@ main div.Contaner2 div.Right div.Nothing {
         transform: translateY(0px);
     }
     
+}
+
+
+/*костыль*/
+.hide {
+    opacity: 0;
 }
