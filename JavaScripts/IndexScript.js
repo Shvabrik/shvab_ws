@@ -30,11 +30,14 @@ resizeFontSize(document.querySelector('div.FillerBlock h2'), 'height');
 
 
 const BrainFuckInterpreter = () => {
-    document.getElementById('TextOutput').value = "Sorry i haven't made an interpreter yet :(";
+    document.getElementById('TextOutput').value = `Sorry i haven't made an interpreter yet :(\n${document.getElementById('BrainFuckInput').value} was not interpreted`;
     setTimeout(() => document.getElementById('TextOutput').value = "Hi!", 2000);
 }
 
 document.getElementById('RunBrainFuck').addEventListener('click', BrainFuckInterpreter);
+
+
+
 
 
 $('body *').on('touchstart', function (){});
